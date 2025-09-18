@@ -2,17 +2,17 @@
 
 A fun VS Code extension that displays interesting Python facts when you open or create Python files! Learn something new about Python every time you code.
 
-![Python Facts Extension](https://raw.githubusercontent.com/bhaumikmistry/python-facts-and-teacher/main/resources/python-fun-fact.png)
+![Python Facts Extension](https://github.com/bhaumikmistry/python-facts-and-teacher/blob/main/resources/python-fun-fact.png)
 
 ## ✨ See It In Action
 
 ### 🎯 Opening Python Files
-![Open File Demo](https://raw.githubusercontent.com/bhaumikmistry/python-facts-and-teacher/main/resources/open_file_demo.gif)
+![Open File Demo](https://github.com/bhaumikmistry/python-facts-and-teacher/blob/main/resources/open_file_demo.gif)
 
 *Get a fun Python fact every time you open or create a Python file!*
 
 ### 💾 Saving Python Files  
-![Save File Demo](https://raw.githubusercontent.com/bhaumikmistry/python-facts-and-teacher/main/resources/save_file_demo.gif)
+![Save File Demo](https://github.com/bhaumikmistry/python-facts-and-teacher/blob/main/resources/save_file_demo.gif)
 
 *Learn something new about Python with every interaction.*
 
@@ -128,6 +128,54 @@ We're looking for facts about:
 1. Open or create any Python file
 2. Enjoy learning new Python facts!
 3. Use `Ctrl+Shift+P` → "Show Python Fun Fact" for manual triggers
+
+## 🔧 Development & Building
+
+### Prerequisites
+- Node.js 16+ and npm
+- VS Code 1.104.0+
+
+### Setup
+```bash
+# Clone the repository
+git clone https://github.com/bhaumikmistry/python-facts-and-teacher.git
+cd python-facts-and-teacher
+
+# Install dependencies
+npm install
+
+# Compile the extension
+npm run compile
+```
+
+### Available Scripts
+```bash
+# Development
+npm run compile          # Compile TypeScript
+npm run watch           # Watch for changes
+npm run lint            # Run ESLint
+
+# Testing
+npm run test            # Run tests
+npm run compile-tests   # Compile test files
+
+# Packaging
+npm run build:vsix      # Build VSIX package
+npm run vsce:package    # Create VSIX in root directory
+npm run release         # Create VSIX in releases/ directory
+npm run vsce:publish    # Publish to marketplace (requires auth)
+```
+
+### Creating VSIX Package
+```bash
+# Quick build
+npm run build:vsix
+
+# Build for release (outputs to releases/ directory)
+npm run release
+```
+
+The VSIX file can be installed manually or distributed independently of the marketplace.
 
 ## Contributing
 

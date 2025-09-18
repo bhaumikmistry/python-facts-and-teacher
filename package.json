@@ -65,7 +65,11 @@
     "watch-tests": "tsc -p . -w --outDir out",
     "pretest": "npm run compile-tests && npm run compile && npm run lint",
     "lint": "eslint src",
-    "test": "vscode-test"
+    "test": "vscode-test",
+    "vsce:package": "vsce package",
+    "vsce:publish": "vsce publish",
+    "build:vsix": "npm run package && vsce package",
+    "release": "npm run package && vsce package --out releases/"
   },
   "devDependencies": {
     "@types/vscode": "^1.104.0",
@@ -79,6 +83,7 @@
     "webpack": "^5.99.7",
     "webpack-cli": "^6.0.1",
     "@vscode/test-cli": "^0.0.10",
-    "@vscode/test-electron": "^2.5.2"
+    "@vscode/test-electron": "^2.5.2",
+    "@vscode/vsce": "^3.0.0"
   }
 }
