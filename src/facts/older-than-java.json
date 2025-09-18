@@ -1,0 +1,23 @@
+{
+  "id": "older-than-java",
+  "title": "Python is Older Than Java",
+  "shortDescription": "Python predates Java by 4 years - first released in 1991 vs Java's 1995!",
+  "detailedDescription": "Despite Python's recent surge in popularity, it's actually older than Java. Python's first version was released in 1991, while Java's first version came out in 1995. Even though Python is over 30 years old, it continues to grow in popularity and remains one of the most widely used programming languages today.",
+  "examples": [
+    "# Python timeline:",
+    "# 1989 - Development started",
+    "# 1991 - First release (0.9.0)",
+    "# 1994 - Python 1.0",
+    "# 2000 - Python 2.0",
+    "# 2008 - Python 3.0",
+    "",
+    "# Java timeline:",
+    "# 1995 - First release"
+  ],
+  "links": [
+    {
+      "title": "Python Release History",
+      "url": "https://en.wikipedia.org/wiki/History_of_Python"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "itertools-module",
+  "title": "Itertools: Iterator Building Blocks",
+  "shortDescription": "The itertools module provides powerful tools for creating and manipulating iterators!",
+  "detailedDescription": "Python's itertools module is a collection of tools for handling iterators and creating iterator algebra. It provides functions for creating infinite iterators, filtering and grouping data, and combining iterators in various ways. These tools are memory-efficient and can handle large datasets elegantly.",
+  "examples": [
+    "import itertools",
+    "",
+    "# Infinite iterators",
+    "counter = itertools.count(10, 2)  # Start at 10, step by 2",
+    "print(list(itertools.islice(counter, 5)))  # [10, 12, 14, 16, 18]",
+    "",
+    "# Cycle through values infinitely",
+    "colors = itertools.cycle(['red', 'green', 'blue'])",
+    "print(list(itertools.islice(colors, 7)))  # ['red', 'green', 'blue', 'red', 'green', 'blue', 'red']",
+    "",
+    "# Combinations and permutations",
+    "letters = ['A', 'B', 'C']",
+    "print(list(itertools.combinations(letters, 2)))  # [('A', 'B'), ('A', 'C'), ('B', 'C')]",
+    "print(list(itertools.permutations(letters, 2)))  # [('A', 'B'), ('A', 'C'), ('B', 'A'), ('B', 'C'), ('C', 'A'), ('C', 'B')]",
+    "",
+    "# Grouping data",
+    "data = [1, 1, 2, 2, 2, 3, 1, 1]",
+    "for key, group in itertools.groupby(data):",
+    "    print(f'{key}: {list(group)}')",
+    "# 1: [1, 1]",
+    "# 2: [2, 2, 2]",
+    "# 3: [3]",
+    "# 1: [1, 1]",
+    "",
+    "# Chain iterators together",
+    "list1 = [1, 2, 3]",
+    "list2 = [4, 5, 6]",
+    "chained = itertools.chain(list1, list2)",
+    "print(list(chained))  # [1, 2, 3, 4, 5, 6]",
+    "",
+    "# Filter with predicate",
+    "numbers = range(10)",
+    "evens = itertools.filterfalse(lambda x: x % 2, numbers)",
+    "print(list(evens))  # [0, 2, 4, 6, 8]"
+  ],
+  "links": [
+    {
+      "title": "Python Itertools",
+      "url": "https://docs.python.org/3/library/itertools.html"
+    }
+  ]
+}

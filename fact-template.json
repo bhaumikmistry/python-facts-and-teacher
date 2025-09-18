@@ -1,0 +1,28 @@
+{
+  "id": "your-unique-fact-id",
+  "title": "Your Fact Title Here",
+  "shortDescription": "Brief one-line description for the notification popup (under 100 characters)",
+  "detailedDescription": "Detailed explanation of the concept, feature, or trivia. This should be informative and engaging, providing context and background information about why this fact is interesting or useful.",
+  "examples": [
+    "# Code example 1 - basic usage",
+    "print('Hello, Python!')",
+    "",
+    "# Code example 2 - with explanation",
+    "result = [x for x in range(5)]",
+    "print(result)  # Output: [0, 1, 2, 3, 4]",
+    "",
+    "# You can include multiple examples",
+    "# Use comments to explain what's happening",
+    "# Empty strings create blank lines for readability"
+  ],
+  "links": [
+    {
+      "title": "Official Python Documentation",
+      "url": "https://docs.python.org/3/..."
+    },
+    {
+      "title": "Related PEP or Tutorial",
+      "url": "https://peps.python.org/pep-..."
+    }
+  ]
+}

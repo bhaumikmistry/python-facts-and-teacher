@@ -1,0 +1,44 @@
+{
+  "id": "codetype-warning",
+  "title": "CodeType: Not for the Faint of Heart",
+  "shortDescription": "Python's types.CodeType help includes the warning 'Not for the faint of heart'!",
+  "detailedDescription": "When you explore Python's internals and look at help(types.CodeType), you'll find a humorous warning in the documentation: 'Create a code object. Not for the faint of heart.' This warning acknowledges that working with code objects directly is complex and potentially dangerous, as you're manipulating Python's internal bytecode representation.",
+  "examples": [
+    "import types",
+    "",
+    "# Check the help for CodeType",
+    "# help(types.CodeType)",
+    "",
+    "# The warning appears in the help:",
+    "# 'Create a code object. Not for the faint of heart.'",
+    "",
+    "# Code objects represent compiled Python code",
+    "def example_function():",
+    "    return 'Hello, World!'",
+    "",
+    "# Every function has a code object",
+    "code_obj = example_function.__code__",
+    "",
+    "print(f'Function name: {code_obj.co_name}')",
+    "print(f'Argument count: {code_obj.co_argcount}')",
+    "print(f'Local variables: {code_obj.co_varnames}')",
+    "print(f'Bytecode: {code_obj.co_code}')",
+    "",
+    "# Working with code objects directly is indeed",
+    "# 'not for the faint of heart' - it requires",
+    "# deep understanding of Python internals!",
+    "",
+    "# You can even create code objects manually",
+    "# (but seriously, don't unless you know what you're doing)"
+  ],
+  "links": [
+    {
+      "title": "Python Code Objects",
+      "url": "https://docs.python.org/3/library/types.html#types.CodeType"
+    },
+    {
+      "title": "Python Bytecode",
+      "url": "https://docs.python.org/3/library/dis.html"
+    }
+  ]
+}

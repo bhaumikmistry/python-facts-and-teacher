@@ -1,0 +1,49 @@
+{
+  "id": "geohash-easter-egg",
+  "title": "Geohash in Antigravity Module",
+  "shortDescription": "The antigravity module includes a geohash function for generating meetup locations!",
+  "detailedDescription": "Beyond opening the famous xkcd comic, the antigravity module also contains a geohash function that can generate GPS coordinates for meetups. This is based on another xkcd comic about the 'geohashing' algorithm, which creates a deterministic but unpredictable location within a 1° latitude by 1° longitude square based on your location and the date.",
+  "examples": [
+    "import antigravity",
+    "",
+    "# This opens the xkcd comic about Python",
+    "# But there's more hidden functionality!",
+    "",
+    "# The geohash function (requires latitude, longitude, and date)",
+    "# antigravity.geohash(37.421542, -122.085589, b'2005-05-26-10458.68')",
+    "",
+    "# Based on xkcd comic: https://xkcd.com/426/",
+    "# The algorithm:",
+    "# 1. Take your graticule (1°×1° square)",
+    "# 2. Get the Dow Jones opening for the date",
+    "# 3. Use MD5 hash to generate coordinates",
+    "# 4. Meet other geohashers at that location!",
+    "",
+    "# Example of what the geohash algorithm does:",
+    "import hashlib",
+    "import datetime",
+    "",
+    "def simple_geohash_demo(lat, lon, date_str):",
+    "    # This is a simplified version for demonstration",
+    "    hash_input = f'{date_str}-{lat}-{lon}'",
+    "    hash_result = hashlib.md5(hash_input.encode()).hexdigest()",
+    "    # Convert to coordinates (simplified)",
+    "    return f'Demo hash: {hash_result[:8]}...'",
+    "",
+    "print(simple_geohash_demo(37.4, -122.1, '2023-12-25'))"
+  ],
+  "links": [
+    {
+      "title": "xkcd Geohashing",
+      "url": "https://xkcd.com/426/"
+    },
+    {
+      "title": "Geohashing Algorithm",
+      "url": "https://geohashing.site/geohashing/Main_Page"
+    },
+    {
+      "title": "Python antigravity.py Source",
+      "url": "https://github.com/python/cpython/blob/main/Lib/antigravity.py"
+    }
+  ]
+}

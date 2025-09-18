@@ -1,0 +1,30 @@
+{
+  "id": "python-performance",
+  "title": "Python Performance Secrets",
+  "shortDescription": "Python can be surprisingly fast with the right techniques!",
+  "detailedDescription": "While Python is interpreted and generally slower than compiled languages, there are many ways to optimize Python code. Using built-in functions, NumPy for numerical operations, and tools like Cython or PyPy can dramatically improve performance. The key is knowing when and how to optimize.",
+  "examples": [
+    "# Use built-in functions (they're implemented in C)",
+    "# Slow:",
+    "result = []",
+    "for i in range(1000):",
+    "    result.append(i * 2)",
+    "",
+    "# Fast:",
+    "result = [i * 2 for i in range(1000)]",
+    "",
+    "# Even faster:",
+    "import numpy as np",
+    "result = np.arange(1000) * 2"
+  ],
+  "links": [
+    {
+      "title": "Python Performance Tips",
+      "url": "https://wiki.python.org/moin/PythonSpeed/PerformanceTips"
+    },
+    {
+      "title": "NumPy for Performance",
+      "url": "https://numpy.org/doc/stable/user/whatisnumpy.html"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "influenced-javascript",
+  "title": "Python Influenced JavaScript Design",
+  "shortDescription": "Python is one of 9 languages that influenced JavaScript's design!",
+  "detailedDescription": "JavaScript's creator, Brendan Eich, drew inspiration from multiple programming languages when designing JavaScript. Python was one of the 9 languages that influenced JavaScript's design, along with AWK, C, HyperTalk, Java, Lua, Perl, Scheme, and Self. This shows Python's impact on the broader programming language ecosystem.",
+  "examples": [
+    "# Languages that influenced JavaScript:",
+    "influences = [",
+    "    'AWK', 'C', 'HyperTalk', 'Java',",
+    "    'Lua', 'Perl', 'Python', 'Scheme', 'Self'",
+    "]",
+    "",
+    "# Python features that influenced JavaScript:",
+    "# - Dynamic typing",
+    "# - First-class functions",
+    "# - List comprehensions (later added to JS)",
+    "",
+    "# Python list comprehension",
+    "squares = [x**2 for x in range(5)]",
+    "print(squares)  # [0, 1, 4, 9, 16]"
+  ],
+  "links": [
+    {
+      "title": "JavaScript History",
+      "url": "https://en.wikipedia.org/wiki/JavaScript#History"
+    }
+  ]
+}

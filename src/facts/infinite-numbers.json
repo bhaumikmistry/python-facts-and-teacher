@@ -1,0 +1,25 @@
+{
+  "id": "infinite-numbers",
+  "title": "Python Can Define Infinity",
+  "shortDescription": "Python can represent positive and negative infinity using float('inf')!",
+  "detailedDescription": "Unlike many programming languages, Python allows you to define and work with infinite values. You can create positive infinity with float('inf') and negative infinity with float('-inf'). These values behave mathematically correct in comparisons and calculations.",
+  "examples": [
+    "# Defining infinity",
+    "positive_infinity = float('inf')",
+    "negative_infinity = float('-inf')",
+    "",
+    "# Infinity comparisons",
+    "print(1000000 < positive_infinity)  # True",
+    "print(-1000000 > negative_infinity)  # True",
+    "",
+    "# Math with infinity",
+    "print(positive_infinity + 1)  # inf",
+    "print(positive_infinity == positive_infinity)  # True"
+  ],
+  "links": [
+    {
+      "title": "Python Numeric Types",
+      "url": "https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex"
+    }
+  ]
+}

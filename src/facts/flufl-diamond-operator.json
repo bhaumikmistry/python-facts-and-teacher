@@ -1,0 +1,44 @@
+{
+  "id": "flufl-diamond-operator",
+  "title": "FLUFL and the Diamond Operator",
+  "shortDescription": "PEP 401 introduced the <> 'diamond operator' as an April Fools' joke!",
+  "detailedDescription": "PEP 401 was an April Fools' Day joke (4/01) that introduced the FLUFL (Friendly Language Uncle For Life) and reinstated the <> diamond operator for inequality. The PEP humorously claimed that != was a 'horrible, finger pain inducing mistake' and that <> should be the sole spelling for inequality. You can actually enable this with a special import!",
+  "examples": [
+    "# PEP 401 April Fools' joke",
+    "# The FLUFL (Friendly Language Uncle For Life)",
+    "",
+    "# Enable the diamond operator (Python 3.9+)",
+    "from __future__ import barry_as_FLUFL",
+    "",
+    "# Now you can use <> instead of !=",
+    "# x <> y  # instead of x != y",
+    "",
+    "# The joke PEP claimed:",
+    "# '!= is a horrible, finger pain inducing mistake'",
+    "# 'The <> diamond operator is more beautiful'",
+    "",
+    "# April Fools' elements in PEP 401:",
+    "pep_jokes = {",
+    "    'PEP number': '401 (April 1st)',",
+    "    'BDFL retirement': 'Guido stepping down (joke)',",
+    "    'New title': 'BDEVIL (Benevolent Dictator Emeritus...)',",
+    "    'Successor': 'Uncle Barry (Barry Warsaw)',",
+    "    'New title': 'FLUFL (Friendly Language Uncle For Life)',",
+    "    'Diamond operator': '<> instead of !='",
+    "}",
+    "",
+    "# Try it yourself (if you dare!):",
+    "# from __future__ import barry_as_FLUFL",
+    "# print(5 <> 3)  # True (equivalent to 5 != 3)"
+  ],
+  "links": [
+    {
+      "title": "PEP 401 - BDFL Retirement",
+      "url": "https://peps.python.org/pep-0401/"
+    },
+    {
+      "title": "April Fools' Day Programming Jokes",
+      "url": "https://en.wikipedia.org/wiki/April_Fools%27_Day_Request_for_Comments"
+    }
+  ]
+}

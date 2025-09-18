@@ -1,0 +1,41 @@
+{
+  "id": "context-managers",
+  "title": "Context Managers and 'with' Statement",
+  "shortDescription": "Python's 'with' statement ensures proper resource management and cleanup!",
+  "detailedDescription": "Context managers in Python provide a clean way to manage resources like files, network connections, or locks. The 'with' statement ensures that cleanup code runs even if an exception occurs. You can create custom context managers using the contextlib module or by implementing __enter__ and __exit__ methods.",
+  "examples": [
+    "# File handling with context manager",
+    "with open('file.txt', 'r') as f:",
+    "    content = f.read()",
+    "# File is automatically closed, even if an error occurs",
+    "",
+    "# Multiple context managers",
+    "with open('input.txt', 'r') as infile, open('output.txt', 'w') as outfile:",
+    "    outfile.write(infile.read().upper())",
+    "",
+    "# Custom context manager",
+    "from contextlib import contextmanager",
+    "",
+    "@contextmanager",
+    "def timer():",
+    "    import time",
+    "    start = time.time()",
+    "    print('Timer started')",
+    "    try:",
+    "        yield",
+    "    finally:",
+    "        end = time.time()",
+    "        print(f'Elapsed: {end - start:.2f} seconds')",
+    "",
+    "# Usage",
+    "with timer():",
+    "    # Some time-consuming operation",
+    "    sum(range(1000000))"
+  ],
+  "links": [
+    {
+      "title": "Python Context Managers",
+      "url": "https://docs.python.org/3/library/contextlib.html"
+    }
+  ]
+}

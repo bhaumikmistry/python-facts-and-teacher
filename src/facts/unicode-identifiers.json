@@ -1,0 +1,44 @@
+{
+  "id": "unicode-identifiers",
+  "title": "Unicode Variable Names",
+  "shortDescription": "Python 3 supports Unicode characters in variable names - you can use emojis and symbols!",
+  "detailedDescription": "Python 3 added support for Unicode characters in identifiers, allowing you to use characters from different languages, mathematical symbols, and even emojis as variable names. While not recommended for production code, this feature adds flavor when working with scientific formulas or creating fun examples.",
+  "examples": [
+    "# Mathematical symbols as variable names",
+    "π = 3.14159",
+    "α = 0.05  # significance level",
+    "Δ = 0.001  # delta",
+    "∑ = sum([1, 2, 3, 4, 5])  # summation",
+    "",
+    "# Different languages",
+    "nombre = 'Alice'  # French/Spanish for 'name'",
+    "年齢 = 25  # Japanese for 'age'",
+    "возраст = 30  # Russian for 'age'",
+    "",
+    "# Even emojis work (but please don't do this in production!)",
+    "🐍 = 'Python'",
+    "🚀 = 'rocket'",
+    "💡 = 'idea'",
+    "",
+    "print(f'{🐍} is a {🚀} for your {💡}!')",
+    "",
+    "# Scientific formulas become more readable",
+    "# E = mc²",
+    "m = 10  # mass",
+    "c = 299792458  # speed of light",
+    "E = m * c**2  # energy",
+    "",
+    "# But stick to ASCII for production code!",
+    "energy = mass * speed_of_light**2"
+  ],
+  "links": [
+    {
+      "title": "Python Identifiers",
+      "url": "https://docs.python.org/3/reference/lexical_analysis.html#identifiers"
+    },
+    {
+      "title": "Unicode in Python",
+      "url": "https://docs.python.org/3/howto/unicode.html"
+    }
+  ]
+}

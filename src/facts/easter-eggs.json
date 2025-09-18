@@ -1,0 +1,33 @@
+{
+  "id": "easter-eggs",
+  "title": "Python's Easter Eggs",
+  "shortDescription": "Python has hidden easter eggs that you can discover!",
+  "detailedDescription": "Python developers love humor and have hidden several easter eggs in the language. These range from philosophical statements to web comics, and they're a testament to Python's fun-loving community culture.",
+  "examples": [
+    "import this          # The Zen of Python",
+    "import antigravity   # Opens xkcd comic about Python",
+    "import __hello__     # Simple greeting",
+    "",
+    "# Braces joke (throws SyntaxError: not a chance)",
+    "# from __future__ import braces",
+    "",
+    "# Hash of infinity (returns 314159 = 10^5 × π)",
+    "print(hash(float('inf')))  # 314159",
+    "",
+    "# Diamond operator (April Fools' PEP 401)",
+    "# from __future__ import barry_as_FLUFL",
+    "",
+    "# Reserved keyword that throws SyntaxError",
+    "# __peg_parser__ = 'test'  # SyntaxError in Python 3.9+",
+    "",
+    "# Unicode variable names (don't do this in production!)",
+    "# 🐍 = 'Python'",
+    "# π = 3.14159"
+  ],
+  "links": [
+    {
+      "title": "Python Easter Eggs",
+      "url": "https://github.com/OrkoHunter/python-easter-eggs"
+    }
+  ]
+}

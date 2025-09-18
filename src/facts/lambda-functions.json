@@ -1,0 +1,36 @@
+{
+  "id": "lambda-functions",
+  "title": "Lambda Functions: Anonymous Functions",
+  "shortDescription": "Python's lambda functions create small anonymous functions in a single line!",
+  "detailedDescription": "Lambda functions are small, anonymous functions that can have any number of arguments but can only have one expression. They're useful for short functions that are used once, often with functions like map(), filter(), and sort(). While powerful, they should be used sparingly for readability.",
+  "examples": [
+    "# Basic lambda function",
+    "square = lambda x: x ** 2",
+    "print(square(5))  # 25",
+    "",
+    "# Lambda with multiple arguments",
+    "add = lambda x, y: x + y",
+    "print(add(3, 4))  # 7",
+    "",
+    "# Using lambda with map()",
+    "numbers = [1, 2, 3, 4, 5]",
+    "squared = list(map(lambda x: x ** 2, numbers))",
+    "print(squared)  # [1, 4, 9, 16, 25]",
+    "",
+    "# Using lambda with filter()",
+    "numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]",
+    "evens = list(filter(lambda x: x % 2 == 0, numbers))",
+    "print(evens)  # [2, 4, 6, 8, 10]",
+    "",
+    "# Using lambda with sort()",
+    "students = [('Alice', 85), ('Bob', 90), ('Charlie', 78)]",
+    "students.sort(key=lambda student: student[1])  # Sort by grade",
+    "print(students)  # [('Charlie', 78), ('Alice', 85), ('Bob', 90)]"
+  ],
+  "links": [
+    {
+      "title": "Python Lambda Functions",
+      "url": "https://docs.python.org/3/tutorial/controlflow.html#lambda-expressions"
+    }
+  ]
+}

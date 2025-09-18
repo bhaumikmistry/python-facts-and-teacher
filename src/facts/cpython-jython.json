@@ -1,0 +1,28 @@
+{
+  "id": "cpython-jython",
+  "title": "Python Has Multiple Implementations",
+  "shortDescription": "CPython, Jython, PyPy, and IronPython are different implementations of Python!",
+  "detailedDescription": "Python is actually a language specification with multiple implementations. CPython (written in C) is the standard implementation. Jython runs on the Java Virtual Machine, PyPy is written in Python itself and focuses on speed, and IronPython runs on the .NET framework. Each implementation has its own strengths and use cases.",
+  "examples": [
+    "# Python implementations:",
+    "implementations = {",
+    "    'CPython': 'Standard implementation (C)',",
+    "    'Jython': 'Runs on JVM (Java)',",
+    "    'PyPy': 'Fast implementation (Python + JIT)',",
+    "    'IronPython': 'Runs on .NET framework',",
+    "    'MicroPython': 'For microcontrollers',",
+    "    'Brython': 'Python in the browser'",
+    "}",
+    "",
+    "# Check your Python implementation",
+    "import sys",
+    "print(f'Implementation: {sys.implementation.name}')",
+    "print(f'Version: {sys.version}')"
+  ],
+  "links": [
+    {
+      "title": "Python Implementations",
+      "url": "https://wiki.python.org/moin/PythonImplementations"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "f-strings",
+  "title": "F-Strings: Formatted String Literals",
+  "shortDescription": "F-strings provide the fastest and most readable way to format strings in Python!",
+  "detailedDescription": "Introduced in Python 3.6, f-strings (formatted string literals) are the most efficient and readable way to format strings. They allow embedding expressions directly inside string literals and are faster than both .format() and % formatting. F-strings can include complex expressions, function calls, and formatting specifications.",
+  "examples": [
+    "# Basic f-string usage",
+    "name = 'Alice'",
+    "age = 30",
+    "print(f'Hello, {name}! You are {age} years old.')",
+    "",
+    "# Expressions inside f-strings",
+    "x, y = 10, 20",
+    "print(f'The sum of {x} and {y} is {x + y}')",
+    "",
+    "# Function calls in f-strings",
+    "import math",
+    "radius = 5",
+    "print(f'Circle area: {math.pi * radius ** 2:.2f}')",
+    "",
+    "# Formatting numbers",
+    "price = 123.456",
+    "print(f'Price: ${price:.2f}')  # Price: $123.46",
+    "",
+    "# Debug feature (Python 3.8+)",
+    "value = 42",
+    "print(f'{value=}')  # value=42",
+    "",
+    "# Multi-line f-strings",
+    "message = f'''",
+    "Hello {name},",
+    "Your age is {age}.",
+    "Next year you'll be {age + 1}.",
+    "'''"
+  ],
+  "links": [
+    {
+      "title": "PEP 498 - Literal String Interpolation",
+      "url": "https://peps.python.org/pep-0498/"
+    }
+  ]
+}

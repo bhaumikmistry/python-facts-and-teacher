@@ -1,0 +1,22 @@
+{
+  "id": "list-comprehensions",
+  "title": "List Comprehensions Magic",
+  "shortDescription": "List comprehensions can be faster than regular loops and more readable!",
+  "detailedDescription": "List comprehensions provide a concise way to create lists and are often faster than equivalent for loops because they're optimized at the C level. They can include conditions and nested iterations, making complex data transformations elegant and readable.",
+  "examples": [
+    "# Basic list comprehension",
+    "squares = [x**2 for x in range(10)]",
+    "",
+    "# With condition",
+    "evens = [x for x in range(20) if x % 2 == 0]",
+    "",
+    "# Nested comprehension",
+    "matrix = [[i*j for j in range(3)] for i in range(3)]"
+  ],
+  "links": [
+    {
+      "title": "List Comprehensions Tutorial",
+      "url": "https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions"
+    }
+  ]
+}

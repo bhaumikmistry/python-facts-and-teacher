@@ -1,0 +1,18 @@
+{
+  "id": "zen-of-python",
+  "title": "The Zen of Python",
+  "shortDescription": "Python has 19 guiding principles, but only 19 are written down!",
+  "detailedDescription": "The Zen of Python is a collection of 19 software principles that influences the design of Python. You can access it by typing 'import this' in any Python interpreter. Interestingly, there are supposed to be 20 principles, but the 20th one (about the obvious way to do something) was never written down by Tim Peters.",
+  "examples": [
+    "import this",
+    "# Beautiful is better than ugly",
+    "# Simple is better than complex",
+    "# Readability counts"
+  ],
+  "links": [
+    {
+      "title": "PEP 20 - The Zen of Python",
+      "url": "https://www.python.org/dev/peps/pep-0020/"
+    }
+  ]
+}

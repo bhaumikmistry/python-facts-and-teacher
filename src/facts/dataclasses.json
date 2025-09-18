@@ -1,0 +1,49 @@
+{
+  "id": "dataclasses",
+  "title": "Dataclasses: Simplified Class Creation",
+  "shortDescription": "Python 3.7+ dataclasses automatically generate common methods like __init__ and __repr__!",
+  "detailedDescription": "Dataclasses, introduced in Python 3.7, provide a decorator that automatically generates common methods for classes that primarily store data. The @dataclass decorator creates __init__, __repr__, __eq__, and other methods based on class annotations, reducing boilerplate code significantly.",
+  "examples": [
+    "from dataclasses import dataclass, field",
+    "from typing import List",
+    "",
+    "# Traditional class",
+    "class PersonOld:",
+    "    def __init__(self, name, age, email):",
+    "        self.name = name",
+    "        self.age = age",
+    "        self.email = email",
+    "    ",
+    "    def __repr__(self):",
+    "        return f'Person({self.name}, {self.age}, {self.email})'",
+    "",
+    "# Dataclass equivalent",
+    "@dataclass",
+    "class Person:",
+    "    name: str",
+    "    age: int",
+    "    email: str",
+    "    hobbies: List[str] = field(default_factory=list)",
+    "",
+    "# Usage",
+    "person = Person('Alice', 30, 'alice@example.com')",
+    "print(person)  # Person(name='Alice', age=30, email='alice@example.com', hobbies=[])",
+    "",
+    "# Dataclass features",
+    "@dataclass(frozen=True)  # Immutable",
+    "class Point:",
+    "    x: float",
+    "    y: float",
+    "",
+    "@dataclass(order=True)  # Enables comparison operators",
+    "class Student:",
+    "    name: str",
+    "    grade: float"
+  ],
+  "links": [
+    {
+      "title": "Python Dataclasses",
+      "url": "https://docs.python.org/3/library/dataclasses.html"
+    }
+  ]
+}

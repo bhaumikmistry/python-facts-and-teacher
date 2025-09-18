@@ -1,0 +1,30 @@
+{
+  "id": "multiple-assignments",
+  "title": "Multiple Assignments in One Line",
+  "shortDescription": "Python allows multiple variable assignments in a single statement!",
+  "detailedDescription": "Python supports multiple assignment patterns that make code more concise and readable. You can assign the same value to multiple variables, unpack sequences into multiple variables, or even swap variables without temporary variables. This feature showcases Python's elegant syntax design.",
+  "examples": [
+    "# Same value to multiple variables",
+    "a = b = c = 10",
+    "print(a, b, c)  # 10 10 10",
+    "",
+    "# Multiple assignments from sequence",
+    "x, y, z = 1, 2, 3",
+    "print(x, y, z)  # 1 2 3",
+    "",
+    "# Swapping variables (no temp variable needed!)",
+    "a, b = 5, 10",
+    "a, b = b, a  # Swap",
+    "print(a, b)  # 10 5",
+    "",
+    "# Unpacking",
+    "name, age = ['Alice', 25]",
+    "print(f'{name} is {age} years old')"
+  ],
+  "links": [
+    {
+      "title": "Python Assignment Statements",
+      "url": "https://docs.python.org/3/reference/simple_stmts.html#assignment-statements"
+    }
+  ]
+}

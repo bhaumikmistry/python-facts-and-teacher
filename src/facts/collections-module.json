@@ -1,0 +1,47 @@
+{
+  "id": "collections-module",
+  "title": "Collections Module: Specialized Data Types",
+  "shortDescription": "Python's collections module provides powerful alternatives to built-in data types!",
+  "detailedDescription": "The collections module offers specialized container datatypes that extend Python's built-in types. These include Counter for counting, defaultdict for dictionaries with default values, deque for efficient appends/pops from both ends, and namedtuple for creating simple classes. These tools can make your code more efficient and readable.",
+  "examples": [
+    "from collections import Counter, defaultdict, deque, namedtuple",
+    "",
+    "# Counter - count occurrences",
+    "text = 'hello world'",
+    "letter_count = Counter(text)",
+    "print(letter_count)  # Counter({'l': 3, 'o': 2, 'h': 1, 'e': 1, ' ': 1, 'w': 1, 'r': 1, 'd': 1})",
+    "print(letter_count.most_common(2))  # [('l', 3), ('o', 2)]",
+    "",
+    "# defaultdict - dictionary with default values",
+    "dd = defaultdict(list)",
+    "dd['fruits'].append('apple')",
+    "dd['fruits'].append('banana')",
+    "print(dd)  # defaultdict(<class 'list'>, {'fruits': ['apple', 'banana']})",
+    "",
+    "# deque - double-ended queue",
+    "dq = deque([1, 2, 3])",
+    "dq.appendleft(0)  # Add to left",
+    "dq.append(4)      # Add to right",
+    "print(dq)         # deque([0, 1, 2, 3, 4])",
+    "print(dq.popleft())  # Remove from left: 0",
+    "",
+    "# namedtuple - create simple classes",
+    "Point = namedtuple('Point', ['x', 'y'])",
+    "p = Point(1, 2)",
+    "print(f'Point: x={p.x}, y={p.y}')  # Point: x=1, y=2",
+    "",
+    "# ChainMap - combine multiple dictionaries",
+    "from collections import ChainMap",
+    "dict1 = {'a': 1, 'b': 2}",
+    "dict2 = {'b': 3, 'c': 4}",
+    "combined = ChainMap(dict1, dict2)",
+    "print(combined['a'])  # 1 (from dict1)",
+    "print(combined['b'])  # 2 (from dict1, first in chain)"
+  ],
+  "links": [
+    {
+      "title": "Python Collections Module",
+      "url": "https://docs.python.org/3/library/collections.html"
+    }
+  ]
+}

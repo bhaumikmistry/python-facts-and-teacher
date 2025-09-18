@@ -1,0 +1,20 @@
+{
+  "id": "hobby-project-origin",
+  "title": "Python Started as a Christmas Holiday Project",
+  "shortDescription": "Python was created during Christmas holidays in 1989 as a hobby project!",
+  "detailedDescription": "Guido van Rossum started Python as a hobby project during the Christmas holidays in 1989. He was looking for an interesting project to keep him occupied during the week around Christmas. He wanted to create a scripting language that would be a descendant of ABC and appeal to Unix/C hackers.",
+  "examples": [
+    "# Python's first version was released in 1991",
+    "# Just over a year after Guido started the project",
+    "import sys",
+    "print(f'Python version: {sys.version}')",
+    "",
+    "# Python has come a long way since 1989!"
+  ],
+  "links": [
+    {
+      "title": "Python's Origin Story",
+      "url": "https://docs.python.org/3/faq/general.html#why-was-python-created-in-the-first-place"
+    }
+  ]
+}

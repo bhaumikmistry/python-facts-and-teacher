@@ -1,0 +1,23 @@
+{
+  "id": "everything-is-object",
+  "title": "Everything is an Object",
+  "shortDescription": "In Python, everything is an object - even functions and classes!",
+  "detailedDescription": "Python follows a consistent object model where everything is an object with a type, identity, and value. This means you can assign functions to variables, pass them as arguments, and even modify classes at runtime. This flexibility is what makes Python so powerful and dynamic.",
+  "examples": [
+    "# Functions are objects",
+    "def greet(): return 'Hello!'",
+    "my_func = greet",
+    "print(my_func())  # Hello!",
+    "",
+    "# Even numbers are objects",
+    "x = 42",
+    "print(x.__class__)  # <class 'int'>",
+    "print(dir(x))  # Shows all methods"
+  ],
+  "links": [
+    {
+      "title": "Python Data Model",
+      "url": "https://docs.python.org/3/reference/datamodel.html"
+    }
+  ]
+}

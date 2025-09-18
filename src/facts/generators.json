@@ -1,0 +1,42 @@
+{
+  "id": "generators",
+  "title": "Generators: Memory-Efficient Iterators",
+  "shortDescription": "Python generators create iterators that produce values on-demand, saving memory!",
+  "detailedDescription": "Generators are a powerful Python feature that allows you to create iterators in a memory-efficient way. Instead of creating all values at once, generators produce values on-demand using the 'yield' keyword. This is especially useful for large datasets or infinite sequences.",
+  "examples": [
+    "# Generator function",
+    "def fibonacci():",
+    "    a, b = 0, 1",
+    "    while True:",
+    "        yield a",
+    "        a, b = b, a + b",
+    "",
+    "# Use the generator",
+    "fib = fibonacci()",
+    "for _ in range(10):",
+    "    print(next(fib))",
+    "",
+    "# Generator expression",
+    "squares = (x**2 for x in range(10))",
+    "print(list(squares))  # [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]",
+    "",
+    "# Memory comparison",
+    "# List comprehension (creates all values in memory)",
+    "big_list = [x for x in range(1000000)]",
+    "",
+    "# Generator (creates values on-demand)",
+    "big_gen = (x for x in range(1000000))",
+    "",
+    "# Generator for file processing",
+    "def read_large_file(file_path):",
+    "    with open(file_path, 'r') as file:",
+    "        for line in file:",
+    "            yield line.strip()"
+  ],
+  "links": [
+    {
+      "title": "Python Generators",
+      "url": "https://docs.python.org/3/tutorial/classes.html#generators"
+    }
+  ]
+}

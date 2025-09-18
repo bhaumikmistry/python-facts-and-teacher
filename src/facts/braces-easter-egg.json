@@ -1,0 +1,32 @@
+{
+  "id": "braces-easter-egg",
+  "title": "The Braces Easter Egg",
+  "shortDescription": "Try importing braces from __future__ - Python has a humorous response!",
+  "detailedDescription": "Python developers occasionally joke about adding curly braces like other languages. The `from __future__ import braces` easter egg is designed to instantly shut down any conversation about introducing curly braces to Python. It throws a SyntaxError with the message 'not a chance', reinforcing Python's commitment to indentation-based syntax.",
+  "examples": [
+    "# Try this in your Python interpreter:",
+    "from __future__ import braces",
+    "",
+    "# Output:",
+    "# SyntaxError: not a chance",
+    "",
+    "# This is Python's humorous way of saying:",
+    "# 'We will NEVER add braces to Python!'",
+    "",
+    "# Python's philosophy: indentation defines structure",
+    "if True:",
+    "    print('Indentation is beautiful!')",
+    "    if True:",
+    "        print('No braces needed!')"
+  ],
+  "links": [
+    {
+      "title": "Python Easter Eggs Collection",
+      "url": "https://github.com/OrkoHunter/python-easter-eggs"
+    },
+    {
+      "title": "PEP 8 - Style Guide",
+      "url": "https://peps.python.org/pep-0008/"
+    }
+  ]
+}

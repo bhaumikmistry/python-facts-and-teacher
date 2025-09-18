@@ -1,0 +1,33 @@
+{
+  "id": "chained-comparisons",
+  "title": "Chained Comparisons",
+  "shortDescription": "Python allows mathematical-style chained comparisons like 1 < x < 10!",
+  "detailedDescription": "Unlike most programming languages, Python supports chained comparisons that read like mathematical expressions. Instead of writing (x > 1) and (x < 10), you can simply write 1 < x < 10. This makes code more readable and closer to mathematical notation.",
+  "examples": [
+    "# Chained comparisons",
+    "x = 5",
+    "",
+    "# Mathematical style (Python)",
+    "if 1 < x < 10:",
+    "    print('x is between 1 and 10')",
+    "",
+    "# Traditional style (other languages)",
+    "if x > 1 and x < 10:",
+    "    print('x is between 1 and 10')",
+    "",
+    "# More complex chains",
+    "a, b, c = 1, 5, 10",
+    "if a < b < c:",
+    "    print('Values are in ascending order')",
+    "",
+    "# Works with any comparison operators",
+    "if 0 <= score <= 100:",
+    "    print('Valid score')"
+  ],
+  "links": [
+    {
+      "title": "Python Comparisons",
+      "url": "https://docs.python.org/3/reference/expressions.html#comparisons"
+    }
+  ]
+}

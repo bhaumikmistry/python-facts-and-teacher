@@ -1,0 +1,53 @@
+{
+  "id": "decorators",
+  "title": "Decorators: Function Wrappers",
+  "shortDescription": "Python decorators allow you to modify or extend function behavior without changing the function itself!",
+  "detailedDescription": "Decorators are a powerful Python feature that allows you to wrap functions or classes with additional functionality. They use the @ syntax and are commonly used for logging, timing, authentication, caching, and more. Decorators demonstrate Python's support for functional programming concepts.",
+  "examples": [
+    "# Simple decorator",
+    "def my_decorator(func):",
+    "    def wrapper():",
+    "        print('Before function call')",
+    "        func()",
+    "        print('After function call')",
+    "    return wrapper",
+    "",
+    "@my_decorator",
+    "def say_hello():",
+    "    print('Hello!')",
+    "",
+    "# Decorator with arguments",
+    "def repeat(times):",
+    "    def decorator(func):",
+    "        def wrapper(*args, **kwargs):",
+    "            for _ in range(times):",
+    "                result = func(*args, **kwargs)",
+    "            return result",
+    "        return wrapper",
+    "    return decorator",
+    "",
+    "@repeat(3)",
+    "def greet(name):",
+    "    print(f'Hello, {name}!')",
+    "",
+    "# Built-in decorators",
+    "class MyClass:",
+    "    @staticmethod",
+    "    def static_method():",
+    "        return 'Static method called'",
+    "    ",
+    "    @classmethod",
+    "    def class_method(cls):",
+    "        return f'Class method of {cls.__name__}'",
+    "    ",
+    "    @property",
+    "    def my_property(self):",
+    "        return 'Property value'"
+  ],
+  "links": [
+    {
+      "title": "Python Decorators",
+      "url": "https://docs.python.org/3/glossary.html#term-decorator"
+    }
+  ]
+}

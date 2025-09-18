@@ -1,0 +1,23 @@
+{
+  "id": "no-compiler-needed",
+  "title": "Python Doesn't Need a Compiler",
+  "shortDescription": "Python is interpreted, not compiled - you can run code directly without compilation!",
+  "detailedDescription": "Unlike languages like C++ or Java that require compilation before execution, Python is an interpreted language. The Python interpreter reads and executes code line by line at runtime. This makes development faster and more interactive, though it can be slower at execution time compared to compiled languages.",
+  "examples": [
+    "# No compilation step needed!",
+    "# Just run: python my_script.py",
+    "",
+    "# Interactive development",
+    ">>> print('No compilation required!')",
+    "No compilation required!",
+    "",
+    "# Python bytecode (.pyc files) are created automatically",
+    "# for performance optimization, but you don't manage them"
+  ],
+  "links": [
+    {
+      "title": "Python Execution Model",
+      "url": "https://docs.python.org/3/reference/executionmodel.html"
+    }
+  ]
+}

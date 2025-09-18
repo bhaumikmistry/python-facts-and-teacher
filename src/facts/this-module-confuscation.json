@@ -1,0 +1,37 @@
+{
+  "id": "this-module-confuscation",
+  "title": "The this.py Module Paradox",
+  "shortDescription": "The code that prints the Zen of Python violates its own principles!",
+  "detailedDescription": "The this.py module that prints the Zen of Python is intentionally written in an obfuscated way that violates the very principles it preaches. The code uses ROT13 encoding and is deliberately ugly and implicit, making it probably the only Python module that goes against the spirit of what it teaches. This ironic implementation is a clever joke by Python developers.",
+  "examples": [
+    "# The Zen of Python says 'Beautiful is better than ugly'",
+    "# But the this.py source code looks like this:",
+    "",
+    "# s = \"\"\"Gur Mra bs Clguba, ol Gvz Crgref...",
+    "# Beautiful is better than ugly.",
+    "# Explicit is better than implicit...",
+    "",
+    "# The code uses ROT13 cipher to encode the text",
+    "import codecs",
+    "",
+    "# ROT13 example:",
+    "encoded = codecs.encode('Beautiful is better than ugly', 'rot13')",
+    "print(encoded)  # 'Ornhgvshy vf orggre guna htyl'",
+    "",
+    "decoded = codecs.decode(encoded, 'rot13')",
+    "print(decoded)  # 'Beautiful is better than ugly'",
+    "",
+    "# The irony: ugly code that teaches beauty!",
+    "import this  # Prints beautiful philosophy from ugly code"
+  ],
+  "links": [
+    {
+      "title": "ROT13 Cipher",
+      "url": "https://en.wikipedia.org/wiki/ROT13"
+    },
+    {
+      "title": "Python this.py Source",
+      "url": "https://github.com/python/cpython/blob/main/Lib/this.py"
+    }
+  ]
+}

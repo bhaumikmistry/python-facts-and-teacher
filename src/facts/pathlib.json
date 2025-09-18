@@ -1,0 +1,43 @@
+{
+  "id": "pathlib",
+  "title": "Pathlib: Modern Path Handling",
+  "shortDescription": "Python's pathlib module provides object-oriented path manipulation that's cleaner than os.path!",
+  "detailedDescription": "The pathlib module, introduced in Python 3.4, offers an object-oriented approach to working with filesystem paths. It's more intuitive and readable than the traditional os.path module, with methods that chain naturally and work across different operating systems.",
+  "examples": [
+    "from pathlib import Path",
+    "",
+    "# Creating paths",
+    "home = Path.home()  # User's home directory",
+    "current = Path.cwd()  # Current working directory",
+    "file_path = Path('documents') / 'projects' / 'my_file.txt'",
+    "",
+    "# Path operations",
+    "print(file_path.name)        # 'my_file.txt'",
+    "print(file_path.stem)        # 'my_file'",
+    "print(file_path.suffix)      # '.txt'",
+    "print(file_path.parent)      # 'documents/projects'",
+    "print(file_path.parts)       # ('documents', 'projects', 'my_file.txt')",
+    "",
+    "# File operations",
+    "if file_path.exists():",
+    "    content = file_path.read_text()",
+    "    size = file_path.stat().st_size",
+    "",
+    "# Directory operations",
+    "for py_file in Path('.').glob('*.py'):",
+    "    print(py_file)",
+    "",
+    "# Cross-platform paths",
+    "config_path = Path.home() / '.config' / 'myapp' / 'settings.json'",
+    "",
+    "# Create directories",
+    "new_dir = Path('new_project')",
+    "new_dir.mkdir(parents=True, exist_ok=True)"
+  ],
+  "links": [
+    {
+      "title": "Python Pathlib",
+      "url": "https://docs.python.org/3/library/pathlib.html"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "name": "python-facts-and-teacher",
+  "displayName": "Python Facts and Teacher",
+  "description": "Learn Python through fun facts! Get interesting Python trivia, tips, and insights every time you code.",
+  "publisher": "bhaumikmistry",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "icon": "resources/python-fun-fact.png",
+  "galleryBanner": {
+    "color": "#1e1e1e",
+    "theme": "dark"
+  },
+  "extensionKind": [
+    "ui"
+  ],
+  "engines": {
+    "vscode": "^1.104.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bhaumikmistry/python-facts-and-teacher"
+  },
+  "bugs": {
+    "url": "https://github.com/bhaumikmistry/python-facts-and-teacher/issues"
+  },
+  "homepage": "https://github.com/bhaumikmistry/python-facts-and-teacher#readme",
+  "qna": "https://github.com/bhaumikmistry/python-facts-and-teacher/discussions",
+  "sponsor": {
+    "url": "https://github.com/sponsors/bhaumikmistry"
+  },
+  "categories": [
+    "Education",
+    "Other"
+  ],
+  "keywords": [
+    "python",
+    "facts",
+    "learning",
+    "education",
+    "tips",
+    "trivia",
+    "programming",
+    "developer",
+    "tutorial",
+    "easter-eggs"
+  ],
+  "activationEvents": [
+    "onLanguage:python"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "python-facts-and-teacher.showFact",
+        "title": "Show Python Fun Fact"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.104.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "eslint": "^9.25.1",
+    "typescript": "^5.8.3",
+    "ts-loader": "^9.5.2",
+    "webpack": "^5.99.7",
+    "webpack-cli": "^6.0.1",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}

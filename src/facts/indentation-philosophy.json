@@ -1,0 +1,23 @@
+{
+  "id": "indentation-philosophy",
+  "title": "Python's Indentation Philosophy",
+  "shortDescription": "Python uses indentation for code blocks instead of braces - it's not just style!",
+  "detailedDescription": "Unlike most programming languages that use braces {} or keywords like 'begin/end', Python uses indentation to define code blocks. This enforces readable code and eliminates the 'dangling else' problem. The standard is 4 spaces per indentation level.",
+  "examples": [
+    "# Correct indentation",
+    "if True:",
+    "    print('This is indented')",
+    "    if True:",
+    "        print('This is double indented')",
+    "",
+    "# IndentationError if not properly indented",
+    "if True:",
+    "print('This will cause an error')"
+  ],
+  "links": [
+    {
+      "title": "PEP 8 - Style Guide",
+      "url": "https://www.python.org/dev/peps/pep-0008/"
+    }
+  ]
+}

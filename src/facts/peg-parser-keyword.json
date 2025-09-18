@@ -1,0 +1,45 @@
+{
+  "id": "peg-parser-keyword",
+  "title": "The __peg_parser__ Keyword",
+  "shortDescription": "__peg_parser__ is a reserved keyword in Python 3.9+ that throws a SyntaxError!",
+  "detailedDescription": "Python 3.9 introduced a new PEG (Parsing Expression Grammar) parser to replace the old LL(1) parser. As part of this transition, __peg_parser__ became a reserved keyword that will throw a SyntaxError if you try to use it. This keyword was used internally during the parser transition and remains reserved.",
+  "examples": [
+    "# Try using __peg_parser__ as a variable name:",
+    "# __peg_parser__ = 'test'",
+    "",
+    "# Result: SyntaxError: invalid syntax",
+    "",
+    "# This keyword is related to Python 3.9's new parser",
+    "# PEG (Parsing Expression Grammar) vs old LL(1) parser",
+    "",
+    "# The new PEG parser allows for more flexible syntax",
+    "# and better error messages",
+    "",
+    "# You can check your Python version:",
+    "import sys",
+    "print(f'Python version: {sys.version}')",
+    "",
+    "# Python 3.9+ uses the new PEG parser by default",
+    "# The old parser was removed in Python 3.10",
+    "",
+    "# Other reserved keywords you can't use:",
+    "reserved_keywords = [",
+    "    'False', 'None', 'True', 'and', 'as', 'assert',",
+    "    'break', 'class', 'continue', 'def', 'del', 'elif',",
+    "    'else', 'except', 'finally', 'for', 'from', 'global',",
+    "    'if', 'import', 'in', 'is', 'lambda', 'nonlocal',",
+    "    'not', 'or', 'pass', 'raise', 'return', 'try',",
+    "    'while', 'with', 'yield'",
+    "]"
+  ],
+  "links": [
+    {
+      "title": "PEP 617 - New PEG Parser",
+      "url": "https://peps.python.org/pep-0617/"
+    },
+    {
+      "title": "Python Keywords",
+      "url": "https://docs.python.org/3/reference/lexical_analysis.html#keywords"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "underscore-memory",
+  "title": "Underscore Has Memory Power",
+  "shortDescription": "The underscore (_) in Python remembers the last expression result in interactive mode!",
+  "detailedDescription": "In Python's interactive shell, the underscore (_) automatically stores the result of the last expression that was executed. This is incredibly useful when working in the REPL or Jupyter notebooks, allowing you to quickly reference previous calculations without having to assign them to variables.",
+  "examples": [
+    "# In Python interactive shell:",
+    ">>> 5 + 3",
+    "8",
+    ">>> _ * 2  # Uses the previous result (8)",
+    "16",
+    ">>> result = _  # Store it in a variable",
+    ">>> result",
+    "16"
+  ],
+  "links": [
+    {
+      "title": "Python Interactive Shell",
+      "url": "https://docs.python.org/3/tutorial/interpreter.html"
+    }
+  ]
+}

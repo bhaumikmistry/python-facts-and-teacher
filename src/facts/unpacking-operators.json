@@ -1,0 +1,42 @@
+{
+  "id": "unpacking-operators",
+  "title": "Unpacking Operators (* and **)",
+  "shortDescription": "Python's * and ** operators can unpack sequences and dictionaries in function calls!",
+  "detailedDescription": "The unpacking operators * and ** allow you to unpack sequences and dictionaries when calling functions or creating new collections. The * operator unpacks sequences (lists, tuples) into positional arguments, while ** unpacks dictionaries into keyword arguments. These operators make Python code more flexible and concise.",
+  "examples": [
+    "# Unpacking in function calls",
+    "def greet(first, last, age):",
+    "    return f'Hello {first} {last}, age {age}'",
+    "",
+    "# Using * to unpack a list",
+    "person_data = ['Alice', 'Smith', 30]",
+    "message = greet(*person_data)",
+    "print(message)  # Hello Alice Smith, age 30",
+    "",
+    "# Using ** to unpack a dictionary",
+    "person_dict = {'first': 'Bob', 'last': 'Jones', 'age': 25}",
+    "message = greet(**person_dict)",
+    "print(message)  # Hello Bob Jones, age 25",
+    "",
+    "# Unpacking in assignments",
+    "numbers = [1, 2, 3, 4, 5]",
+    "first, *middle, last = numbers",
+    "print(f'First: {first}, Middle: {middle}, Last: {last}')",
+    "# First: 1, Middle: [2, 3, 4], Last: 5",
+    "",
+    "# Merging lists and dictionaries",
+    "list1 = [1, 2, 3]",
+    "list2 = [4, 5, 6]",
+    "merged = [*list1, *list2]  # [1, 2, 3, 4, 5, 6]",
+    "",
+    "dict1 = {'a': 1, 'b': 2}",
+    "dict2 = {'c': 3, 'd': 4}",
+    "merged_dict = {**dict1, **dict2}  # {'a': 1, 'b': 2, 'c': 3, 'd': 4}"
+  ],
+  "links": [
+    {
+      "title": "Python Unpacking",
+      "url": "https://docs.python.org/3/tutorial/controlflow.html#unpacking-argument-lists"
+    }
+  ]
+}

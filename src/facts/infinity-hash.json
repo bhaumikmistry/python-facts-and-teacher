@@ -1,0 +1,40 @@
+{
+  "id": "infinity-hash",
+  "title": "The Hash of Infinity",
+  "shortDescription": "hash(float('inf')) returns 314159 - which is 10^5 × π!",
+  "detailedDescription": "Python's hash function for infinity returns a special value: 314159, which is 10^5 × π (pi). Similarly, hash(float('-inf')) returns -314159. This mathematical easter egg shows Python developers' attention to mathematical elegance even in internal implementations. The choice of π (pi) for infinity's hash is a beautiful mathematical reference.",
+  "examples": [
+    "# The hash of infinity",
+    "import math",
+    "",
+    "positive_inf = float('inf')",
+    "negative_inf = float('-inf')",
+    "",
+    "print(hash(positive_inf))  # 314159",
+    "print(hash(negative_inf))  # -314159",
+    "",
+    "# The mathematical connection:",
+    "pi_scaled = int(math.pi * 100000)",
+    "print(pi_scaled)  # 314159",
+    "",
+    "# Verify the relationship",
+    "print(hash(float('inf')) == int(math.pi * 100000))  # True",
+    "",
+    "# Other special hash values:",
+    "print(hash(float('nan')))  # 0 (Not a Number)",
+    "",
+    "# Why π for infinity?",
+    "# It's a mathematical easter egg showing",
+    "# Python's appreciation for mathematical beauty!"
+  ],
+  "links": [
+    {
+      "title": "Python Hash Function",
+      "url": "https://docs.python.org/3/library/functions.html#hash"
+    },
+    {
+      "title": "IEEE 754 Floating Point",
+      "url": "https://en.wikipedia.org/wiki/IEEE_754"
+    }
+  ]
+}

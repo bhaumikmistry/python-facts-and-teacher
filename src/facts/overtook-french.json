@@ -1,0 +1,24 @@
+{
+  "id": "overtook-french",
+  "title": "Python Overtook French in Schools",
+  "shortDescription": "In 2015, Python became more popular than French as a language taught in primary schools!",
+  "detailedDescription": "According to a 2015 survey by Ocado Technology, Python surpassed French in popularity for primary school teaching. The survey of 3,000 respondents found that 6 out of 10 parents preferred their children to learn Python over French. This shows how programming languages are becoming as important as traditional foreign languages in education.",
+  "examples": [
+    "# Python in education statistics:",
+    "# 60% of parents prefer Python over French",
+    "# Used in schools worldwide for teaching programming",
+    "# Simple syntax makes it perfect for beginners",
+    "",
+    "print('Hello, World!')  # First program many students learn",
+    "",
+    "# Easy to understand compared to other languages",
+    "for i in range(5):",
+    "    print(f'Learning Python is fun! Step {i+1}')"
+  ],
+  "links": [
+    {
+      "title": "Python in Education",
+      "url": "https://www.python.org/community/sigs/current/edu-sig/"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "walrus-operator",
+  "title": "The Walrus Operator (:=)",
+  "shortDescription": "Python 3.8 introduced the walrus operator (:=) for assignment expressions!",
+  "detailedDescription": "The walrus operator (:=) allows assignment within expressions, making code more concise in certain situations. Named for its resemblance to a walrus's eyes and tusks, this operator assigns a value to a variable and returns that value in a single expression.",
+  "examples": [
+    "# Traditional approach",
+    "data = input('Enter a value: ')",
+    "if len(data) > 5:",
+    "    print(f'Long input: {data}')",
+    "",
+    "# With walrus operator",
+    "if (n := len(input('Enter a value: '))) > 5:",
+    "    print(f'Long input with {n} characters')",
+    "",
+    "# Useful in list comprehensions",
+    "# Traditional",
+    "results = []",
+    "for x in range(10):",
+    "    squared = x ** 2",
+    "    if squared > 10:",
+    "        results.append(squared)",
+    "",
+    "# With walrus operator",
+    "results = [squared for x in range(10) if (squared := x ** 2) > 10]",
+    "",
+    "# In while loops",
+    "while (line := input('> ')) != 'quit':",
+    "    print(f'You said: {line}')"
+  ],
+  "links": [
+    {
+      "title": "PEP 572 - Assignment Expressions",
+      "url": "https://peps.python.org/pep-0572/"
+    }
+  ]
+}

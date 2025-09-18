@@ -1,0 +1,29 @@
+{
+  "id": "python-software-foundation",
+  "title": "Python Software Foundation",
+  "shortDescription": "The Python Software Foundation is a non-profit that manages Python's development and community!",
+  "detailedDescription": "The Python Software Foundation (PSF) is an independent non-profit organization that holds the copyright on Python versions 2.1 and newer. The PSF's mission is to advance open source technology related to Python and to publicize its use. They organize PyCon conferences, provide grants to Python projects, and ensure Python remains free and open source.",
+  "examples": [
+    "# PSF responsibilities:",
+    "psf_roles = [",
+    "    'Holds Python copyright',",
+    "    'Organizes PyCon conferences',",
+    "    'Provides grants to Python projects',",
+    "    'Manages Python trademarks',",
+    "    'Supports Python community',",
+    "    'Ensures Python remains open source'",
+    "]",
+    "",
+    "# You can support PSF by:",
+    "# - Donating to the foundation",
+    "# - Becoming a PSF member",
+    "# - Contributing to Python projects",
+    "# - Attending PyCon conferences"
+  ],
+  "links": [
+    {
+      "title": "Python Software Foundation",
+      "url": "https://www.python.org/psf/"
+    }
+  ]
+}

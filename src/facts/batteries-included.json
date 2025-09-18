@@ -1,0 +1,44 @@
+{
+  "id": "batteries-included",
+  "title": "Batteries Included Philosophy",
+  "shortDescription": "Python comes with a comprehensive standard library - 'batteries included'!",
+  "detailedDescription": "Python follows a 'batteries included' philosophy, meaning it comes with a rich standard library that covers most common programming tasks. From web servers and email handling to JSON parsing and regular expressions, Python's standard library reduces the need for external dependencies for many common tasks.",
+  "examples": [
+    "# Web server in one line!",
+    "# python -m http.server 8000",
+    "",
+    "# Built-in modules for common tasks:",
+    "import json        # JSON parsing",
+    "import re          # Regular expressions",
+    "import urllib      # URL handling",
+    "import sqlite3     # Database",
+    "import smtplib     # Email sending",
+    "import csv         # CSV files",
+    "import xml.etree   # XML parsing",
+    "import gzip        # Compression",
+    "import datetime    # Date/time handling",
+    "import random      # Random numbers",
+    "import os          # Operating system interface",
+    "import sys         # System-specific parameters",
+    "",
+    "# Example: JSON handling",
+    "data = {'name': 'Alice', 'age': 30}",
+    "json_string = json.dumps(data)",
+    "parsed_data = json.loads(json_string)",
+    "",
+    "# Example: HTTP request",
+    "from urllib.request import urlopen",
+    "with urlopen('https://httpbin.org/json') as response:",
+    "    data = json.loads(response.read())",
+    "",
+    "# Example: Simple web server",
+    "from http.server import HTTPServer, SimpleHTTPRequestHandler",
+    "# server = HTTPServer(('localhost', 8000), SimpleHTTPRequestHandler)"
+  ],
+  "links": [
+    {
+      "title": "Python Standard Library",
+      "url": "https://docs.python.org/3/library/"
+    }
+  ]
+}

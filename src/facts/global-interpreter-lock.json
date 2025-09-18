@@ -1,0 +1,24 @@
+{
+  "id": "global-interpreter-lock",
+  "title": "The GIL (Global Interpreter Lock)",
+  "shortDescription": "Python's GIL allows only one thread to execute Python code at a time!",
+  "detailedDescription": "The Global Interpreter Lock is a mutex that protects access to Python objects, preventing multiple native threads from executing Python bytecodes simultaneously. While this can limit multi-threaded performance, it simplifies memory management and makes Python more stable.",
+  "examples": [
+    "import threading",
+    "import time",
+    "",
+    "# Multiple threads, but GIL limits true parallelism",
+    "def worker():",
+    "    for i in range(1000000):",
+    "        pass",
+    "",
+    "# Use multiprocessing for CPU-bound tasks instead",
+    "from multiprocessing import Pool"
+  ],
+  "links": [
+    {
+      "title": "Understanding the GIL",
+      "url": "https://realpython.com/python-gil/"
+    }
+  ]
+}

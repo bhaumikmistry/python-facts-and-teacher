@@ -1,0 +1,17 @@
+{
+  "id": "python-name-origin",
+  "title": "Python's Name Origin",
+  "shortDescription": "Python is named after Monty Python's Flying Circus, not the snake!",
+  "detailedDescription": "Guido van Rossum, Python's creator, was reading scripts from the BBC comedy series 'Monty Python's Flying Circus' when he began implementing Python. He wanted a short, unique, and slightly mysterious name, so he decided to call the language Python.",
+  "examples": [
+    "# Python loves humor - try these:",
+    "import antigravity  # Opens a web comic",
+    "from __future__ import braces  # Gives a humorous error"
+  ],
+  "links": [
+    {
+      "title": "Python FAQ - Why Python?",
+      "url": "https://docs.python.org/3/faq/general.html#why-is-it-called-python"
+    }
+  ]
+}

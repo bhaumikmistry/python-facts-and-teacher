@@ -1,0 +1,50 @@
+{
+  "id": "love-easter-egg",
+  "title": "The Love Easter Egg",
+  "shortDescription": "Python has a hidden love message you can discover!",
+  "detailedDescription": "Python contains a sweet easter egg related to love. When you import the 'love' module or use certain love-related expressions, Python responds with heartwarming messages. This shows the Python community's emphasis on positivity and human connection, even in programming.",
+  "examples": [
+    "# Try these love-related easter eggs:",
+    "",
+    "# Method 1: The love import",
+    "# import love",
+    "# (This might not work in all Python versions)",
+    "",
+    "# Method 2: Love in expressions",
+    "import this",
+    "",
+    "# The Zen includes: 'Beautiful is better than ugly'",
+    "# Which is about loving beautiful code",
+    "",
+    "# Method 3: Create your own love",
+    "def spread_love():",
+    "    messages = [",
+    "        '❤️ Python loves you!',",
+    "        '💖 Code with love!',",
+    "        '🐍 Python hugs!',",
+    "        '💝 Happy coding!'",
+    "    ]",
+    "    import random",
+    "    return random.choice(messages)",
+    "",
+    "print(spread_love())",
+    "",
+    "# Python's philosophy is about loving what you do:",
+    "# - Beautiful is better than ugly",
+    "# - Simple is better than complex",
+    "# - Readability counts",
+    "",
+    "# The Python community motto:",
+    "print('Come for the language, stay for the community! 🐍❤️')"
+  ],
+  "links": [
+    {
+      "title": "Python Community",
+      "url": "https://www.python.org/community/"
+    },
+    {
+      "title": "Python Code of Conduct",
+      "url": "https://www.python.org/psf/conduct/"
+    }
+  ]
+}

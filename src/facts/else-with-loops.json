@@ -1,0 +1,39 @@
+{
+  "id": "else-with-loops",
+  "title": "Else Clause with Loops",
+  "shortDescription": "Python loops can have 'else' clauses that execute when the loop completes normally!",
+  "detailedDescription": "Python's for and while loops can have an 'else' clause that executes only if the loop completes normally (not via break). This is a unique feature that many Python developers don't know about. The else clause is skipped if the loop is terminated by a break statement.",
+  "examples": [
+    "# For loop with else",
+    "for i in range(5):",
+    "    print(i)",
+    "else:",
+    "    print('Loop completed normally')",
+    "",
+    "# Else is skipped when break is used",
+    "for i in range(10):",
+    "    if i == 3:",
+    "        print('Breaking at 3')",
+    "        break",
+    "    print(i)",
+    "else:",
+    "    print('This will not print')",
+    "",
+    "# Practical example: searching",
+    "numbers = [1, 3, 5, 7, 9]",
+    "target = 4",
+    "",
+    "for num in numbers:",
+    "    if num == target:",
+    "        print(f'Found {target}')",
+    "        break",
+    "else:",
+    "    print(f'{target} not found')"
+  ],
+  "links": [
+    {
+      "title": "Python Loop Statements",
+      "url": "https://docs.python.org/3/tutorial/controlflow.html#break-and-continue-statements-and-else-clauses-on-loops"
+    }
+  ]
+}

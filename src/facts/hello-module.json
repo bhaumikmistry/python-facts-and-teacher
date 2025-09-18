@@ -1,0 +1,27 @@
+{
+  "id": "hello-module",
+  "title": "The Secret __hello__ Module",
+  "shortDescription": "Python has a hidden __hello__ module that prints a simple greeting!",
+  "detailedDescription": "Among Python's easter eggs is the __hello__ module. When you import it, it simply prints 'Hello world!' to the console. This is one of several hidden modules that showcase the Python community's sense of humor and attention to delightful details.",
+  "examples": [
+    "# Try this in your Python interpreter:",
+    "import __hello__",
+    "# Output: Hello world!",
+    "",
+    "# Other hidden modules to try:",
+    "import this  # The Zen of Python",
+    "import antigravity  # Opens a web comic",
+    "",
+    "# You can also check what's in the module:",
+    "import __hello__",
+    "print(dir(__hello__))",
+    "",
+    "# These easter eggs show Python's fun culture!"
+  ],
+  "links": [
+    {
+      "title": "Python Easter Eggs",
+      "url": "https://github.com/OrkoHunter/python-easter-eggs"
+    }
+  ]
+}
