@@ -2,19 +2,25 @@
 
 A fun VS Code extension that displays interesting Python facts when you open or create Python files! Learn something new about Python every time you code.
 
-![Python Facts Extension](https://github.com/bhaumikmistry/python-facts-and-teacher/blob/main/resources/python-fun-fact.png)
+![Python Facts Extension](https://raw.githubusercontent.com/bhaumikmistry/python-facts-and-teacher/main/resources/python-fun-fact.png)
 
 ## ✨ See It In Action
 
 ### 🎯 Opening Python Files
-![Open File Demo](https://github.com/bhaumikmistry/python-facts-and-teacher/blob/main/resources/open_file_demo.gif)
 
-*Get a fun Python fact every time you open or create a Python file!*
+<p align="center">
+  <img src="resources/open_file_demo.gif" width="75%">
+  <br/>
+  <em>Get a fun Python fact every time you open or create a Python file!</em>
+</p>
 
-### 💾 Saving Python Files  
-![Save File Demo](https://github.com/bhaumikmistry/python-facts-and-teacher/blob/main/resources/save_file_demo.gif)
+### 💾 Saving Python Files
 
-*Learn something new about Python with every interaction.*
+<p align="center">
+  <img src="resources/save_file_demo.gif" width="75%">
+  <br/>
+  <em>Learn something new about Python with every interaction.</em>
+</p>
 
 ## Features
 
@@ -39,12 +45,14 @@ A fun VS Code extension that displays interesting Python facts when you open or 
 ### 📚 Fact Categories
 
 **Language Origins & History:**
+
 - Python started as a Christmas holiday project in 1989
 - Named after Monty Python's Flying Circus, not the snake
 - Python is older than Java (1991 vs 1995)
 - Python overtook French in primary school popularity
 
 **Language Features:**
+
 - The Zen of Python and its 19 guiding principles
 - Duck typing: "If it walks like a duck and quacks like a duck..."
 - List comprehensions and their performance benefits
@@ -54,6 +62,7 @@ A fun VS Code extension that displays interesting Python facts when you open or 
 - Match statements for structural pattern matching
 
 **Advanced Concepts:**
+
 - Everything is an object in Python
 - The Global Interpreter Lock (GIL) and its implications
 - Generators for memory-efficient iteration
@@ -62,7 +71,8 @@ A fun VS Code extension that displays interesting Python facts when you open or 
 - Async/await for concurrent programming
 
 **Hidden Gems & Easter Eggs:**
-- Underscore (_) remembers the last expression result
+
+- Underscore (\_) remembers the last expression result
 - Python can define infinity with float('inf')
 - Hidden easter eggs like `import antigravity` and `import __hello__`
 - The braces joke: `from __future__ import braces` (SyntaxError: not a chance)
@@ -75,25 +85,25 @@ A fun VS Code extension that displays interesting Python facts when you open or 
 - Multiple implementations: CPython, Jython, PyPy
 
 **Modern Python:**
+
 - Dataclasses for simplified class creation
 - Pathlib for modern path handling
 - Type hints for better code documentation
 - Collections module for specialized data types
 - Itertools for powerful iterator operations
 
-
-
 ## 🤝 Contributing New Facts
 
-Want to add more Python facts? We'd love your contributions! 
+Want to add more Python facts? We'd love your contributions!
 
 📖 **See our [Contributing Guide](CONTRIBUTING.md)** for detailed instructions on how to add new facts.
 
 🚀 **Quick Start**: Copy `fact-template.json`, fill it out, and place it in `src/facts/`
 
 We're looking for facts about:
+
 - Modern Python features and syntax
-- Performance tips and best practices  
+- Performance tips and best practices
 - Hidden gems and easter eggs
 - Python history and trivia
 - Standard library highlights
@@ -111,20 +121,21 @@ We're looking for facts about:
 ## 🚀 Installation
 
 ### From VS Code Marketplace
+
 1. Open VS Code
 2. Go to Extensions (Ctrl+Shift+X)
 3. Search for "Python Facts and Teacher"
 4. Click Install
 
-
-
 ### Manual Installation
+
 1. Download the `.vsix` file from [GitHub Releases](https://github.com/bhaumikmistry/python-facts-and-teacher/releases)
 2. Open VS Code
 3. Run `Extensions: Install from VSIX...` command
 4. Select the downloaded file
 
 ### Get Started
+
 1. Open or create any Python file
 2. Enjoy learning new Python facts!
 3. Use `Ctrl+Shift+P` → "Show Python Fun Fact" for manual triggers
@@ -132,10 +143,12 @@ We're looking for facts about:
 ## 🔧 Development & Building
 
 ### Prerequisites
+
 - Node.js 16+ and npm
 - VS Code 1.104.0+
 
 ### Setup
+
 ```bash
 # Clone the repository
 git clone https://github.com/bhaumikmistry/python-facts-and-teacher.git
@@ -149,6 +162,7 @@ npm run compile
 ```
 
 ### Available Scripts
+
 ```bash
 # Development
 npm run compile          # Compile TypeScript
@@ -167,6 +181,7 @@ npm run vsce:publish    # Publish to marketplace (requires auth)
 ```
 
 ### Creating VSIX Package
+
 ```bash
 # Quick build
 npm run build:vsix
@@ -181,31 +196,18 @@ The VSIX file can be installed manually or distributed independently of the mark
 
 Found an interesting Python fact to add? Have suggestions for improvements? Feel free to contribute!
 
-## Release Notes
-
-### 0.0.1
-
-Initial release featuring:
-- Automatic fact display on Python file open/create
-- Interactive webview with detailed explanations
-- 51 curated Python fun facts with examples and links
-- Smart fact rotation system with persistent storage
-- JSON-based fact system for easy extensibility
-- Modular architecture with separate services
-
 ---
 
 ## 📊 Stats & Info
 
 ![GitHub stars](https://img.shields.io/github/stars/bhaumikmistry/python-facts-and-teacher?style=social)
-![VS Code Installs](https://img.shields.io/visual-studio-marketplace/i/bhaumikmistry.python-facts-and-teacher)
+![VS Code Installs](https://img.shields.io/visual-studio-marketplace/i/mistrybhaumik.python-facts-and-teacher)
 ![GitHub issues](https://img.shields.io/github/issues/bhaumikmistry/python-facts-and-teacher)
-![GitHub license](https://img.shields.io/github/license/bhaumikmistry/python-facts-and-teacher)
 
 ## 🔗 Resources
 
 - **📖 [Contributing Guide](https://github.com/bhaumikmistry/python-facts-and-teacher/blob/main/CONTRIBUTING.md)** - How to add new facts
-- **🐛 [Report Issues](https://github.com/bhaumikmistry/python-facts-and-teacher/issues)** - Bug reports and feature requests  
+- **🐛 [Report Issues](https://github.com/bhaumikmistry/python-facts-and-teacher/issues)** - Bug reports and feature requests
 - **💬 [Discussions](https://github.com/bhaumikmistry/python-facts-and-teacher/discussions)** - Community Q&A
 - **⭐ [GitHub Repository](https://github.com/bhaumikmistry/python-facts-and-teacher)** - Source code and documentation
 - **📝 [Changelog](https://github.com/bhaumikmistry/python-facts-and-teacher/blob/main/CHANGELOG.md)** - Version history
@@ -214,13 +216,12 @@ Initial release featuring:
 ## Support
 
 If you find this extension helpful:
+
 - ⭐ **Star the repository** on GitHub
 - 📝 **Leave a review** in the VS Code marketplace
 - 🐛 **Report bugs** or suggest features via GitHub issues
 - 🤝 **Contribute** new Python facts following our guide
 
 ---
-
-
 
 **Happy Python coding! 🐍**

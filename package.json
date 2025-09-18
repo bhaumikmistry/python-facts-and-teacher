@@ -2,8 +2,8 @@
   "name": "python-facts-and-teacher",
   "displayName": "Python Facts and Teacher",
   "description": "Learn Python through fun facts! Get interesting Python trivia, tips, and insights every time you code.",
-  "publisher": "bhaumikmistry",
-  "version": "1.0.0",
+  "publisher": "mistrybhaumik",
+  "version": "1.1.0",
   "license": "Apache-2.0",
   "icon": "resources/python-fun-fact.png",
   "galleryBanner": {
